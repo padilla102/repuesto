@@ -1,0 +1,314 @@
+@import 'fonts.css';
+
+body {
+    font-family: 'BalooChettan';
+    background-color: #f8f8f8;
+}
+
+a{
+  cursor: pointer;
+}
+
+
+/*spinner loading*/
+.spinner-cover {
+	background: #fff none repeat scroll 0 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 99999;
+}
+.spinner-inner {
+	align-items: center;
+	display: flex;
+	height: 100%;
+	justify-content: center;
+}
+.spinner {
+	margin: 100px auto;
+	width: 50px;
+	height: 40px;
+	text-align: center;
+	font-size: 10px;
+}
+.spinner>div {
+	background-color: #333;
+	height: 100%;
+	width: 6px;
+	display: inline-block;
+	-webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+	animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+.spinner .rect2 {
+	-webkit-animation-delay: -1.1s;
+	animation-delay: -1.1s;
+}
+.spinner .rect3 {
+	-webkit-animation-delay: -1.0s;
+	animation-delay: -1.0s;
+}
+.spinner .rect4 {
+	-webkit-animation-delay: -0.9s;
+	animation-delay: -0.9s;
+}
+.spinner .rect5 {
+	-webkit-animation-delay: -0.8s;
+	animation-delay: -0.8s;
+}
+@-webkit-keyframes sk-stretchdelay {
+	0%,
+	40%,
+	100% {
+		-webkit-transform: scaleY(0.4)
+	}
+	20% {
+		-webkit-transform: scaleY(1.0)
+	}
+}
+@keyframes sk-stretchdelay {
+	0%,
+	40%,
+	100% {
+		transform: scaleY(0.4);
+		-webkit-transform: scaleY(0.4);
+	}
+	20% {
+		transform: scaleY(1.0);
+		-webkit-transform: scaleY(1.0);
+	}
+}
+
+
+
+.container-fluid {
+    padding: unset;
+}
+
+.navbar-brand {
+    font-family: 'TechnicalStencilVP';
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+
+.navbar {
+  position: fixed;
+  top:0; 
+  left:0;
+  z-index: 999;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 15px 0px;
+}
+
+.navbar-collapse{
+  width: fit-content;
+}
+
+.content-highlight{
+    display: flex;
+    flex-wrap: unset !important;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+
+.carousel-item {
+    height: 500px;
+}
+.carousel-item img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.card {
+    height: 100%;
+    white-space: normal;
+
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 15px 0px;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.card-body{
+    height: 100%;
+    border-top: 1px solid  #aab2b9;
+    padding-bottom: 50px;
+}
+
+.card-title{
+    font-size: 14px;
+    color: #6a6a6a;
+}
+
+.card-button{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.card-button a {
+  font-family: 'BalooChettan';
+}
+
+
+.footer{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  background-color: #404044;
+}
+
+.footer p {
+  margin: 0;
+  color: #aab2b9;
+}
+
+.content-social-media{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-social-media div{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content-social-media div .fab{
+  color: #aab2b9;
+}
+
+.content-social-media div .fab:hover{
+  color:#ffffff
+
+}
+
+@supports(object-fit: cover){
+    .carousel-item img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+
+
+
+/* productos */
+
+.list-product {
+  margin-top: 100px;
+}
+
+.input-group{
+  width: 50%;
+}
+
+
+/* shoppint card */
+
+.content-shopping-card{
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.shopping-card {
+  height: 80px;
+}
+
+.shopping-card div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.shopping-card .far {
+  color: #aab2b9;
+}
+
+.shopping-card .far:hover{
+  color: #404044;
+}
+
+.img-shoppingcard{
+  width: 60px;
+  height: 60px;
+}
+
+.car-mobile {
+  display: none;
+}
+
+
+.content-checkout{
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+
+.owl-prev, .owl-next{
+  height: 50px;
+  width: 50px;
+  /* border: 1px solid !important; */
+  border-radius: 50%;
+  background-color: #ffffff !important;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 15px 0px;
+  position: absolute;
+}
+
+.owl-prev {
+  top: 130px;
+  left: -25px;
+  z-index: 100;
+} 
+.owl-next{
+  top: 130px;
+  right: -25px;
+  z-index: 100;
+}
+
+
+@media (max-width: 992px){
+
+  .car-desk{
+    display: none;
+  }
+
+  .car-mobile{
+    display: block;
+  }
+
+  .owl-prev {
+    display: none;
+  } 
+  .owl-next{
+    display: none;
+  }
+
+}
